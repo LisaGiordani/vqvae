@@ -10,4 +10,5 @@ source ~/.bashrc
 eval "$(conda shell.bash hook)"
 conda activate vqvae
 cd $dir
-jupyter notebook vqvae-lisa-cluster.ipynb
+#jupyter run vqvae-lisa-cluster.ipynb > test.log 2>&1
+jupyter nbconvert --to notebook --execute vqvae-lisa-cluster.ipynb
